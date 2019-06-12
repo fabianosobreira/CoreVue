@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -60,7 +59,7 @@ namespace CoreVue
 #if DEBUG
                 if (env.IsDevelopment())
                 {
-                    spa.UseVueCli(npmScript: "serve", port: 8080);
+                    spa.UseVueCli(npmScript: "serve", port: 9000);
                 }
 #endif
             });
